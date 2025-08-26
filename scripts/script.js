@@ -8,9 +8,22 @@ window.addEventListener("DOMContentLoaded", () => {
       li.classList.add("nav-active");
     });
   });
+
+
+
+
+
+ const divs = document.querySelectorAll(".border-divs div");
+
+  divs.forEach((li) => {
+    li.addEventListener("click", () => {
+      divs.forEach((el) => el.classList.remove("border-b"));
+
+      li.classList.add("border-b");
+    });
+  });
+
 });
-
-
 
 window.addEventListener("DOMContentLoaded", () => {
   // Nav active toggle
@@ -49,3 +62,6 @@ window.addEventListener("DOMContentLoaded", () => {
     backdrop.addEventListener("click", closeMenu);
   }
 });
+
+
+
