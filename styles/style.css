@@ -344,6 +344,13 @@ nav a:hover {
   gap: 20px;
 }
 
+.social-media a svg{
+  transition: all 0.9s ease;
+}
+.social-media a svg:hover{
+  transform: scale(1.07);
+}
+
 .hero-container .container {
   height: 100%;
   display: flex;
@@ -1301,8 +1308,12 @@ footer {
   padding: 2px;
   transition: all 0.5s ease;
 }
+#footer-socials-svg div svg{
+  
+  transition: all 0.5s ease;
+}
 
-#footer-socials-svg div:hover {
+#footer-socials-svg div svg:hover {
   transform: scale(1.05);
 }
 #follow-us {

@@ -2,6 +2,12 @@
 }
 
 /* Large screens */
+@media (min-width: 1260px) {
+  .mobile-menu,.menu-backdrop {
+    display: none;
+  }
+
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1280px;
