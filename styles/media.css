@@ -1,12 +1,25 @@
+@media (max-width: 1300px) {
+}
+
 /* Large screens */
 @media (min-width: 1200px) {
   .container {
     max-width: 1280px;
   }
 }
+@media (max-width: 1200px) {
+  .footer-container .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #quick-links h2,
+  #follow-us h2 {
+    text-align: center;
+  }
+}
 
 /* Between 767px and 1440px */
-@media (min-width: 767px) and (max-width: 1440px) {
+@media (min-width: 769px) and (max-width: 1440px) {
   .mobile-ul {
     display: none;
   }
@@ -19,7 +32,7 @@
 }
 
 /* Tablets (between 766px and 1025px) */
-@media (min-width: 766px) and (max-width: 1025px) {
+@media (min-width: 769px) and (max-width: 1025px) {
   .logo + ul li {
     padding: 8px 7px;
   }
@@ -91,9 +104,9 @@
   .go-green + h1 span {
     font-size: 40px;
   }
-}
-
-@media (min-width: 992px) {
+  .section5-div + div {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 992px) {
@@ -172,34 +185,90 @@
     right: 0%;
     max-width: 256px;
   }
-  .section8 .container{
+  .section8 .container {
     flex-direction: column;
   }
-  .section8 .image{
+  .section8 .image {
     width: 80%;
   }
-  .newsletter-div{
+  .newsletter-div {
     width: 60%;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     height: auto;
   }
+  .newsletter-div .span-h {
+    text-align: center !important;
+  }
+  .footer-about-us {
+    text-align: center !important;
+  }
+  .newsletter-div input {
+    padding-right: 0;
+  }
+  .newsletter-div button {
+    width: auto;
+    height: auto;
+    padding: 18px 20px;
+  }
   .newsletter-div form {
+    align-items: center;
+    width: auto;
+    height: auto;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
   }
 
+  .footer-container {
+    padding-top: 241px;
+  }
+  .carousel-slide {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-card {
+    flex: 0 0 calc(50% - 8px);
+  }
+  .section10 .about-us + h1 {
+    font-size: 36px;
+  }
+  .up .about-us {
+    text-align: start;
+  }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 880px) {
+  .image img {
+    width: 80%;
+  }
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
   .hero-container .container {
     margin-top: 40px;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 60px;
     text-align: center;
   }
+  #follow-us h2 {
+    text-align: start;
+  }
+  #quick-links {
+    display: none;
+  }
+  .footer-container .container {
+    flex-direction: row;
+  }
+
   #features-div {
     position: static;
     display: flex;
@@ -234,11 +303,23 @@
   .social-media {
     flex-direction: row;
   }
+  .blue-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .purchase-cards {
+    flex-direction: column;
+  }
 
   .feature-grid .item {
     align-items: center;
     text-align: center;
     gap: 17px;
+  }
+  .section10-container .up button {
+    width: 120px;
   }
 }
 
@@ -259,6 +340,24 @@
   .green-boxes {
     flex-direction: column;
   }
+  .newsletter-div {
+    gap: 12px;
+    padding: 16px 26px;
+  }
+  #arrow {
+    display: none;
+  }
+  .carousel-card {
+    flex: 0 0 100%;
+  }
+  .section10-container .up {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .up .about-us {
+    text-align: center;
+  }
 }
 
 /* Up to 480px */
@@ -276,6 +375,34 @@
   }
   .hero-container .container {
     gap: 30px;
+  }
+  .newsletter-div {
+    width: 80%;
+  }
+  .footer-container .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #follow-us h2 {
+    text-align: center;
+  }
+  .card1 {
+    width: auto;
+  }
+  .card1 div h1 {
+    margin-bottom: 10px;
+  }
+  .card1 hr {
+    margin-bottom: 10px;
+  }
+  .card1 div p {
+    font-size: 18px;
+  }
+  .card1 div h1 {
+    font-size: 30px;
+  }
+  .card1 div h1 span {
+    font-size: 18px;
   }
 }
 
